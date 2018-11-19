@@ -64,7 +64,7 @@
   color: #ffffff;
   font-size: 20px;
   line-height: 1.2;
-  font-weight: 300;
+  font-weight: normal;
   box-shadow: 0 4px 16px rgba(34, 49, 63, .10);
 }
 
@@ -100,20 +100,39 @@
 }
 
 .sectionWrapper {
+  margin: 200px 0 0 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.noMarginTop {
+  margin: 0 !important;
+}
+
 .section {
-  margin: 200px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: 1312px;
-  padding: 0 16px;
+  padding: 56px 16px;
+}
+
+.background {
+  background-color: #F1F8FE;
+}
+
+.alignLeft {
+  align-items: flex-start;
+}
+
+.alignLeft h2 {
+  text-align: left;
+}
+.alignLeft p {
+  text-align: left !important;
 }
 
 .grid {
@@ -141,6 +160,42 @@
   max-width: 752px;
   line-height: 1.6;
   font-weight: 300;
+  margin: 0;
+}
+
+.splitGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 144px;
+}
+
+.gridItem h2 {
+  width: 100%;
+  text-align: left;
+}
+
+.gridItem {
+  position: relative;
+}
+
+.imgPlaceholder {
+  width: 100%;
+  height: 480px;
+  background-color: #F9F9F9;
+}
+
+.socialIcons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  margin: 48px 0 0 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.socialIcon img {
+  margin: 0;
 }
 
 a {
