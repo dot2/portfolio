@@ -5,12 +5,12 @@ const Header = ({ siteTitle }) => (
   <div>
     <div className="navbarWrapper">
       <div className="navbar">
-        <div className="brand">Dylan Dotolo</div>
-        <div className="navItems">
-          <div className="navItem">Work</div>
-          <div className="navItem">About</div>
-          <div className="navItem">Contact</div>
-        </div>
+      <Link to="/"><div className="brand">Dylan Dotolo</div></Link>
+        {/* <div className="navItems">
+          <Link to="/work"><div className="navItem">Work</div></Link>
+          <Link to="/about"><div className="navItem">About</div></Link>
+          <Link to="contact"><div className="navItem">Contact</div></Link>
+        </div> */}
       </div>
     </div>
   </div>

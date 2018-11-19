@@ -7,6 +7,7 @@ import linkedin from'../images/linkedin.svg';
 import instagram from'../images/instagram.svg';
 import twitter from'../images/twitter.svg';
 import github from'../images/github.svg';
+import profilePhoto from'../images/profilePhoto.jpeg';
 import ContactSection from '../components/contactSection';
 
 
@@ -16,7 +17,7 @@ const IndexPage = () => (
       <div className="heroContent">
         <h1>Not Just A Designer But A Creator</h1>
         <p>I love the full process of creating, from brainstorming, to designing and finally writing the code to bring it to life.</p>
-        <div className="btn">LinkedIn profile</div>
+        <a href="https://www.linkedin.com/in/dylandotolo/" target="_blank"><div className="btn">LinkedIn profile</div></a>
       </div>
     </div>
 
@@ -82,24 +83,40 @@ const IndexPage = () => (
             <p>At DISCO, I run the web design and development on the marketing team. I've had a hand in creating things such as the marketing site, support center, and internal tools like the sales toolkit. At DISCO, I run the web design and development on the marketing team. I've had a hand in creating things such as the marketing site, support center, and internal tools like the sales toolkit. </p>
             <div className="socialIcons">
               <div className="socialIcon">
-                <img src={linkedin} alt=""/>
+                <a href="https://www.linkedin.com/in/dylandotolo/" target="_blank">
+                  <img src={linkedin} alt=""/>
+                </a>
               </div>
               <div className="socialIcon">
+              <a href="https://dribbble.com/dylan-dotolo" target="_blank">
                 <img src={dribbble} alt=""/>
+              </a>
               </div>
               <div className="socialIcon">
-                <img src={instagram} alt=""/>
+                <a href="https://www.instagram.com/dylandotolo/" target="_blank">
+                  <img src={instagram} alt=""/>
+                </a>
               </div>
               <div className="socialIcon">
-                <img src={twitter} alt=""/>
+                <a href="https://twitter.com/Dotolo2" target="_blank">
+                  <img src={twitter} alt=""/>
+                </a>
               </div>
               <div className="socialIcon">
-                <img src={github} alt=""/>
+                <a href="https://github.com/dot2" target="_blank">
+                  <img src={github} alt=""/>
+                </a>
               </div>
             </div>
           </div>
           <div className="gridItem">
-            <div className="imgPlaceholder"></div>
+            <div className="photoCard">
+              <img src={profilePhoto} alt=""/>
+              <div className="photoMeta">
+                <span>South Africa | 2018</span>
+                <a href="https://photos.app.goo.gl/BZVryzW1X3AePUCE9" target="_blank">View album</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

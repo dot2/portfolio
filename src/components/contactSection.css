@@ -32,3 +32,12 @@
     font-size: 22px;
     color: #34495E;
 }
+
+@media (max-width: 640px) {
+    .contactInfo h2 {
+      font-size: 34px;
+    }
+    .contactInfo p {
+      font-size: 18px;
+    }
+  }
