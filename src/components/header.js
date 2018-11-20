@@ -6,11 +6,13 @@ const Header = ({ siteTitle }) => (
     <div className="navbarWrapper">
       <div className="navbar">
       <Link to="/"><div className="brand">Dylan Dotolo</div></Link>
-        {/* <div className="navItems">
-          <Link to="/work"><div className="navItem">Work</div></Link>
-          <Link to="/about"><div className="navItem">About</div></Link>
-          <Link to="contact"><div className="navItem">Contact</div></Link>
-        </div> */}
+        <div className="navItems">
+          <a href="" target="_blank"><div className="navItem">Twitter</div></a>
+          <div className="navDivider"></div>
+          <a href="" target="_blank"><div className="navItem">Dribbble</div></a>
+          <div className="navDivider"></div>
+          <a href="" target="_blank"><div className="navItem">Instagram</div></a>
+        </div>
       </div>
     </div>
   </div>

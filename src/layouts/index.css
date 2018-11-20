@@ -103,14 +103,28 @@
 .navItems {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .navItem {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
   color: #22313F;
   padding: 0 16px;
   margin-left: 16px;
+  transition: opacity 0.3s ease-out;
+}
+
+.navItem:hover {
+  opacity: .75;
+}
+
+.navDivider {
+  width: 1px;
+  background-color: #22313F;
+  height: 16px;
+  transform: skew(-15deg);
+  opacity: .50;
 }
 
 .sectionWrapper {
