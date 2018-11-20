@@ -26,12 +26,14 @@ const IndexPage = () => (
         <h2>Currently at DISCO</h2>
         <p>At DISCO, I run web design and development on the marketing team. I've had a hand in creating things such as the marketing site, support center, and internal tools like the sales toolkit. </p>
         <div className="grid">
-          <div className="Cards">
-            <Card 
-              image={require('../images/sales-toolkit.png')}
-              title="Sales Toolkit"
-              text="UI·UX·Dev" />
-          </div>
+          <Link to="/sales-toolkit">
+            <div className="Cards">
+              <Card 
+                image={require('../images/sales-toolkit.png')}
+                title="Sales Toolkit"
+                text="UI·UX·Dev" />
+            </div>
+          </Link>
           <div className="Cards">
             <Card 
               image={require('../images/marketing-website.png')}
